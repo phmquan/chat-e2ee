@@ -16,7 +16,7 @@ const App = () => {
     if (loading) {
       return;
     }
-    
+
     setLoading(true);
     try {
       const chate2ee = createChatInstance();
@@ -59,7 +59,7 @@ const App = () => {
             <div className={styles.linkGenerationBtnContainer}>
               <br />
               <Button
-                label={loading?"Creating...":"Create chat link"}
+                label={loading ? "Creating..." : "Create chat link"}
                 type="primary"
                 onClick={generateLink}
                 disabled={loading}
@@ -73,21 +73,10 @@ const App = () => {
           )}
         </div>
         <div
-          className={`${styles.sectionContribute} ${
-            darkMode === true ? styles.sectionDefault : styles.sectionDefaultLight
-          }`}
+          className={`${styles.sectionContribute} ${darkMode === true ? styles.sectionDefault : styles.sectionDefaultLight
+            }`}
         >
-          <div className={styles.title}>
-            ❤️ The source-code is public on&nbsp;
-            <a
-              href="https://github.com/muke1908/chat-e2ee"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Github
-            </a>
-            , feel free to contribute!
-          </div>
+
         </div>
       </div>
     </>
